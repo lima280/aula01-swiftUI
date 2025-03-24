@@ -33,8 +33,10 @@ struct ContentView: View {
             .padding()
             
         Button("Calcular") {
-            print($idadeHumana)
+            resultado = (idadeHumana ?? 0) * 7
         }
+        Text("Sua idade é: \(resultado)")
+                            .padding()
         }
     }
     
